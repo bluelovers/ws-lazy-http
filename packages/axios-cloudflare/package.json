@@ -1,7 +1,7 @@
 {
   "name": "axios-cloudflare2",
   "private": true,
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An axios interceptor to handle cloudflare browserchecks",
   "keywords": [
     "axios",
@@ -34,7 +34,7 @@
     "sort-package-json": "npx yarn-tool sort"
   },
   "dependencies": {
-    "@lazy-http/is-cloudflare": "^1.0.0"
+    "@lazy-http/is-cloudflare": "^1.0.1"
   },
   "devDependencies": {
     "@types/bluebird": "^3.5.30",
