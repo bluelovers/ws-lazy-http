@@ -39,22 +39,22 @@
   "devDependencies": {
     "@types/bluebird": "^3.5.30",
     "@types/cheerio": "^0.22.18",
+    "@types/jquery": "^3.3.35",
     "@types/jsdom": "^16.2.1",
     "@types/puppeteer": "^2.0.1",
     "@types/request": "^2.48.4",
+    "@types/request-promise": "^4.1.46",
     "@types/tough-cookie": "^4.0.0",
     "axios": "< 0.19 && >= 0.18",
     "bluebird": "^3.7.2",
     "cheerio": "^1.0.0-rc.3",
     "cloudscraper": "^4.6.0",
     "delay": "^4.3.0",
+    "http-form-urlencoded": "^1.0.12",
     "jsdom": "^16.2.2",
-    "playwright": "^0.15.0",
-    "playwright-chromium": "^0.15.0",
-    "puppeteer": "^3.0.1",
+    "jsdom-extra": "^3.0.2",
     "request": "^2.88.2",
-    "tough-cookie": "^3.0.1",
-    "zombie": "^6.1.4"
+    "tough-cookie": "^3.0.1"
   },
   "peerDependencies": {
     "axios": "< 0.19 && >= 0.18"
