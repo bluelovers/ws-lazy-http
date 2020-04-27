@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/sayem314/axios-cloudflare.git
+	branch = master
+	commit = 23af37262a38ce09974d86cfe3d235a8c1b9e896
+	parent = c51979215023853cc0019632bbabdbb1e38743c6
+	method = merge
+	cmdver = 0.4.1
