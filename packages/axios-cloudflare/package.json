@@ -1,32 +1,62 @@
 {
-  "name": "axios-cloudflare",
+  "name": "axios-cloudflare2",
+  "private": true,
   "version": "1.0.2",
   "description": "An axios interceptor to handle cloudflare browserchecks",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freund17/axios-cloudflare.git"
-  },
   "keywords": [
     "axios",
     "cloudflare",
     "interceptor"
   ],
-  "author": "freund17",
-  "license": "MIT",
+  "homepage": "https://github.com/bluelovers/ws-lazy-http/tree/master/packages/axios-cloudflare#readme",
   "bugs": {
-    "url": "https://github.com/freund17/axios-cloudflare/issues"
+    "url": "https://github.com/bluelovers/ws-lazy-http/issues"
   },
-  "homepage": "https://github.com/freund17/axios-cloudflare#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluelovers/ws-lazy-http.git"
+  },
+  "license": "MIT",
+  "author": "freund17",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "doc": "docs",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "npm:publish": "npm publish",
+    "prepublish:lockfile": "npx sync-lockfile .",
+    "prepublishOnly_": "yarn run ncu && yarn run sort-package-json && yarn run test",
+    "postpublish_": "git commit -m \"chore(release): publish\" .",
+    "ncu": "npx yarn-tool ncu -u",
+    "sort-package-json": "npx yarn-tool sort"
+  },
   "dependencies": {
+    "@lazy-http/is-cloudflare": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.30",
+    "@types/cheerio": "^0.22.18",
+    "@types/jsdom": "^16.2.1",
+    "@types/puppeteer": "^2.0.1",
+    "@types/request": "^2.48.4",
+    "@types/tough-cookie": "^4.0.0",
+    "axios": "< 0.19 && >= 0.18",
+    "bluebird": "^3.7.2",
     "cheerio": "^0.22.0",
-    "delay": "^2.0.0",
-    "tough-cookie": "^2.3.2"
+    "cloudscraper": "^4.6.0",
+    "delay": "^4.3.0",
+    "jsdom": "^16.2.2",
+    "playwright": "^0.15.0",
+    "playwright-chromium": "^0.15.0",
+    "puppeteer": "^3.0.1",
+    "request": "^2.88.2",
+    "tough-cookie": "^3.0.1",
+    "zombie": "^6.1.4"
   },
   "peerDependencies": {
-    "axios": "^0.16.1"
+    "axios": "< 0.19 && >= 0.18"
   }
 }
