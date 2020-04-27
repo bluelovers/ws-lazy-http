@@ -29,7 +29,12 @@
     "tsc:default": "tsc -p tsconfig.json",
     "tsc:esm": "tsc -p tsconfig.esm.json"
   },
-  "devDependencies": {},
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^0.22.18"
+  },
   "publishConfig": {
     "access": "public"
   }
