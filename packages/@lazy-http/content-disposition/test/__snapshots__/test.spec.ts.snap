@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`content-disposition contentDisposition 1`] = `"attachment; filename=\\"%E5%B0%8F%E8%AA%AA%E5%90%8D%E5%AD%97.epub\\"; filename*=UTF-8''%E5%B0%8F%E8%AA%AA%E5%90%8D%E5%AD%97.epub"`;
+
+exports[`content-disposition parse 1`] = `
+Object {
+  "result": Object {
+    "filename": "%E5%B0%8F%E8%AA%AA%E5%90%8D%E5%AD%97.epub",
+    "filename*": "%E5%B0%8F%E8%AA%AA%E5%90%8D%E5%AD%97.epub",
+  },
+  "type": "attachment",
+  "value": "小說名字.epub",
+}
+`;

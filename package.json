@@ -19,7 +19,10 @@
   },
   "devDependencies": {
     "@bluelovers/tsconfig": "^1.0.19",
-    "@types/node": "*"
+    "@types/jest": "^25.2.1",
+    "@types/node": "*",
+    "jest": "^25.4.0",
+    "ts-jest": "^25.4.0"
   },
   "peerDependencies": {
     "lerna": "^3"
