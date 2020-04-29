@@ -13,6 +13,7 @@ let jar;
 
 fromURL('https://masiro.moe/', {
 		runScripts: 'dangerously',
+	resources: 'usable',
 	})
 	.catch(e =>
 	{
@@ -28,6 +29,7 @@ fromURL('https://masiro.moe/', {
 				url: e.options.uri,
 				runScripts: 'dangerously',
 				cookieJar: jar._jar,
+				resources: 'usable',
 			})
 		}
 

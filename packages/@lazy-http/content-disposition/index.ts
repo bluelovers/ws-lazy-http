@@ -1,3 +1,5 @@
+import { basename } from 'path';
+
 /**
  * Created by user on 2020/4/28.
  */
@@ -13,10 +15,19 @@ export function decode(encoded_filename: string)
 	return decodeURIComponent(encoded_filename)
 }
 
+const NON_LATIN1_REGEXP = /[^\x20-\x7e\xa0-\xff]/ug
+
 export function contentDisposition(filename: string)
 {
+	filename = basename(filename);
+
 	const encoded_filename = encode(filename);
-	return `attachment; filename="${encoded_filename}"; filename*=UTF-8''${encoded_filename}`
+	if (NON_LATIN1_REGEXP.test(filename))
+	{
+		filename = encoded_filename
+	}
+
+	return `attachment; filename="${filename}"; filename*=UTF-8''${encoded_filename}`
 }
 
 export default contentDisposition
