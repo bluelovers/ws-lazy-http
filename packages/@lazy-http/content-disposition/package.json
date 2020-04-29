@@ -1,6 +1,6 @@
 {
   "name": "@lazy-http/content-disposition",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Create and parse Content-Disposition header",
   "homepage": "https://github.com/bluelovers/ws-lazy-http/tree/master/packages/@lazy-http/content-disposition#readme",
   "bugs": {
