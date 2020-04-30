@@ -37,8 +37,10 @@
     "@lazy-http/is-cloudflare": "^1.0.2"
   },
   "devDependencies": {
+    "@ctrl/cloudflare": "^3.0.0",
     "@types/bluebird": "^3.5.30",
     "@types/cheerio": "^0.22.18",
+    "@types/got": "^9.6.10",
     "@types/jquery": "^3.3.35",
     "@types/jsdom": "^16.2.1",
     "@types/puppeteer": "^2.0.1",
@@ -50,9 +52,11 @@
     "cheerio": "^1.0.0-rc.3",
     "cloudscraper": "^4.6.0",
     "delay": "^4.3.0",
+    "got": "^11.0.2",
     "http-form-urlencoded": "^1.0.12",
     "jsdom": "^16.2.2",
     "jsdom-extra": "^3.0.2",
+    "playwright": "^0.15.0",
     "request": "^2.88.2",
     "tough-cookie": "^3.0.1"
   },
