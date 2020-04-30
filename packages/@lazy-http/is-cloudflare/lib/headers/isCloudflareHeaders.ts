@@ -1,8 +1,6 @@
-/**
- * Created by user on 2020/4/27.
- */
+import { IHeaders } from '../types';
 
-export function isCloudflareHeaders(headers: Record<any, any>)
+export function isCloudflareHeaders(headers: IHeaders)
 {
 	return typeof headers['cf-ray'] !== 'undefined'
 		//&& headers['server']?.indexOf('cloudflare') !== -1

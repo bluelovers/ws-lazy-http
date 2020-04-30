@@ -1,7 +1,8 @@
 import isCloudflareHeaders from '../headers/isCloudflareHeaders';
-import cheerio, { load } from "cheerio";
+import { load } from "cheerio";
+import { IResponse } from '../types';
 
-export function isCloudflareResponse(response: Record<any, any>)
+export function isCloudflareResponse(response: IResponse)
 {
 	if (isCloudflareHeaders(response.headers))
 	{

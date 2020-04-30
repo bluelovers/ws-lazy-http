@@ -1,5 +1,3 @@
-/**
- * Created by user on 2020/4/27.
- */
-export declare function isCloudflareHeaders(headers: Record<any, any>): boolean;
+import { IHeaders } from '../types';
+export declare function isCloudflareHeaders(headers: IHeaders): boolean;
 export default isCloudflareHeaders;
