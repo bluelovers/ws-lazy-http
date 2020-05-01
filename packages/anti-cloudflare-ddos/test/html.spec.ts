@@ -1,25 +1,68 @@
 import { readFileSync } from "fs";
-import { join } from 'path';
+import { join, basename, parse } from 'path';
 import { getCloudflareTimeout } from '../lib/html/timeout';
+import getCloudflareAnswer from '../lib/html/answer';
+import FastGlob from '@bluelovers/fast-glob/bluebird';
+import getCloudflareRayID from '../lib/html/ray_id';
 
-describe(`html test`, () =>
-{
-	const html20200430 = readFileSync(join(__dirname, 'res', '20200430.html'));
+const __res = join(__dirname, 'res');
 
-	test(`getCloudflareTimeout`, () =>
+const htmlList = FastGlob.sync<string>([
+		'*/*.html',
+	], {
+		cwd: __res,
+	})
+	.map(filename =>
 	{
 
-		let actual = getCloudflareTimeout(html20200430, 6000);
-		let expected = 4000;
+		let fp = parse(filename);
 
-		expect(actual).toStrictEqual(expected);
+		return {
+			name: filename,
+			domain: fp.base.match(/^\d+_(.+)$/)[1],
+			body: readFileSync(join(__res, filename)),
+		}
+	})
+;
 
-		expect(getCloudflareTimeout(html20200430, 6000)).toStrictEqual(expected);
-		expect(getCloudflareTimeout(html20200430, 6000)).toStrictEqual(expected);
+describe(`htmlList`, () =>
+{
+	htmlList
+		.forEach((entry) =>
+		{
 
-		//expect(actual).toBeInstanceOf(Date);
-		expect(actual).toMatchSnapshot();
+			describe(entry.name, () =>
+			{
 
-	});
+				it(`getCloudflareTimeout`, () =>
+				{
 
-})
+					let actual = getCloudflareTimeout(entry.body, 6000);
+
+					expect(actual).toStrictEqual(4000);
+					expect(actual).toMatchSnapshot();
+
+				});
+
+				it(`getCloudflareRayID`, () =>
+				{
+
+					let actual = getCloudflareRayID(entry.body);
+					expect(actual).toMatchSnapshot();
+
+				});
+
+				it(`getCloudflareAnswer`, () =>
+				{
+
+					let actual = getCloudflareAnswer(entry.body, entry.domain);
+					expect(actual).toBeDefined();
+
+				});
+
+			});
+
+		})
+	;
+});
+

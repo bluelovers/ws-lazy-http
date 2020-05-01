@@ -30,7 +30,11 @@
     "tsc:esm": "tsc -p tsconfig.esm.json"
   },
   "devDependencies": {
+    "@bluelovers/fast-glob": "^3.0.4",
     "@bluelovers/tsconfig": "^1.0.19",
-    "@types/node": "*"
+    "@types/bluebird": "^3.5.30",
+    "@types/node": "*",
+    "bluebird": "^3.7.2",
+    "fast-glob": "^3.2.2"
   }
 }

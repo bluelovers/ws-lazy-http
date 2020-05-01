@@ -1,9 +1,16 @@
-/**
- * Created by user on 2020/5/1.
- */
 
 import { getCloudflareTimeout } from './lib/html/timeout';
+import { getCloudflareAnswer } from './lib/html/answer';
+import { getCloudflareRayID } from './lib/html/ray_id';
 
-export { getCloudflareTimeout }
+export {
+	getCloudflareTimeout,
+	getCloudflareAnswer,
+	getCloudflareRayID,
+}
 
-export default { getCloudflareTimeout }
+export default {
+	getCloudflareTimeout,
+	getCloudflareAnswer,
+	getCloudflareRayID,
+}

@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`html test getCloudflareTimeout 1`] = `4000`;
+exports[`htmlList 2020/001_masiro.moe.html getCloudflareRayID 1`] = `"58b0c928fa0fefa6"`;
+
+exports[`htmlList 2020/001_masiro.moe.html getCloudflareTimeout 1`] = `4000`;
+
+exports[`htmlList 2020/002_masiro.moe.html getCloudflareRayID 1`] = `"58c7440a8bfa0e76"`;
+
+exports[`htmlList 2020/002_masiro.moe.html getCloudflareTimeout 1`] = `4000`;
+
+exports[`htmlList 2020/002_rlsbb.ru.html getCloudflareRayID 1`] = `"58c743c03a1e199f"`;
+
+exports[`htmlList 2020/002_rlsbb.ru.html getCloudflareTimeout 1`] = `4000`;
