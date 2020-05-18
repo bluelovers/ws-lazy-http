@@ -11,7 +11,7 @@ export function getUserAgentFromHeaders(headers: any): string
 	return (headers as Headers)?.get?.('user-agent') || valueFromRecord('user-agent', headers)
 }
 
-export function getUserAgent(opts: {
+export function getUserAgent(opts?: {
 	headers?: any,
 	window?: Window,
 })
