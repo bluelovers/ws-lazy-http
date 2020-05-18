@@ -1,6 +1,6 @@
 {
   "name": "@lazy-http/get-user-agent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "homepage": "https://github.com/bluelovers/ws-lazy-http/tree/master/packages/@lazy-http/get-user-agent#readme",
   "bugs": {
@@ -30,10 +30,9 @@
     "tsc:esm": "tsc -p tsconfig.esm.json"
   },
   "dependencies": {
-    "@lazy-http/get-window": "^1.0.0",
+    "@lazy-http/get-window": "^1.0.1",
     "value-from-record": "^1.0.1"
   },
-  "devDependencies": {},
   "publishConfig": {
     "access": "public"
   }

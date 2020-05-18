@@ -1,6 +1,6 @@
 {
   "name": "@lazy-http/is-cloudflare",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "check headers or response is cloudflare",
   "homepage": "https://github.com/bluelovers/ws-lazy-http/tree/master/packages/@lazy-http/is-cloudflare#readme",
   "bugs": {
