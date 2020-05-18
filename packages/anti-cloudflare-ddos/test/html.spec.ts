@@ -4,8 +4,7 @@ import { getCloudflareTimeout } from '../lib/html/timeout';
 import getCloudflareAnswer from '../lib/html/answer';
 import FastGlob from '@bluelovers/fast-glob/bluebird';
 import getCloudflareRayID from '../lib/html/ray_id';
-
-const __res = join(__dirname, 'res');
+import { __test, __res } from './__test';
 
 const htmlList = FastGlob.sync<string>([
 		'*/*.html',
