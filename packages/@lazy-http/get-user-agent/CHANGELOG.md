@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/bluelovers/ws-lazy-http/compare/@lazy-http/get-user-agent@1.0.2...@lazy-http/get-user-agent@1.0.3) (2020-05-18)
+
+
+### Features
+
+* allowUndefinedRecord ([d6d7650](https://github.com/bluelovers/ws-lazy-http/commit/d6d765002e7c6ff0713410d1637c15cdc714b68e))
+
+
+
+
+
 ## [1.0.2](https://github.com/bluelovers/ws-lazy-http/compare/@lazy-http/get-user-agent@1.0.1...@lazy-http/get-user-agent@1.0.2) (2020-05-18)
 
 
