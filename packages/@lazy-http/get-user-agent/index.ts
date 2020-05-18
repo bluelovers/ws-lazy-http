@@ -8,7 +8,9 @@ export function getUserAgentFromWindow(win: Window): string
 
 export function getUserAgentFromHeaders(headers: any): string
 {
-	return (headers as Headers)?.get?.('user-agent') || valueFromRecord('user-agent', headers)
+	return (headers as Headers)?.get?.('user-agent') || valueFromRecord('user-agent', headers, {
+		allowUndefinedRecord: true,
+	})
 }
 
 export function getUserAgent(opts?: {

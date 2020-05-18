@@ -13,7 +13,9 @@ function getUserAgentFromWindow(win) {
 exports.getUserAgentFromWindow = getUserAgentFromWindow;
 function getUserAgentFromHeaders(headers) {
     var _a, _b;
-    return ((_b = (_a = headers) === null || _a === void 0 ? void 0 : _a.get) === null || _b === void 0 ? void 0 : _b.call(_a, 'user-agent')) || value_from_record_1.default('user-agent', headers);
+    return ((_b = (_a = headers) === null || _a === void 0 ? void 0 : _a.get) === null || _b === void 0 ? void 0 : _b.call(_a, 'user-agent')) || value_from_record_1.default('user-agent', headers, {
+        allowUndefinedRecord: true,
+    });
 }
 exports.getUserAgentFromHeaders = getUserAgentFromHeaders;
 function getUserAgent(opts) {
